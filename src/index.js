@@ -17,6 +17,9 @@ const chargesheets = require("../controller/chargesheetdb");
 const ArrestPersonDetails = require("../controller/ArrestPersonDetailsdb");
 const fir = require("../controller/firdb");
 
+const cors = require('cors');
+app.use(cors());
+
 app.use(express.json());
 app.set("view engine", "hbs");
 app.set("views", templatepath);
